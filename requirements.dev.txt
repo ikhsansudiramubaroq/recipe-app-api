@@ -1,0 +1,2 @@
+#requirements.dev.txt: Berisi alat pembantu programmer (Flake8, Pytest). Kita tidak ingin alat-alat ini memperberat server asli, jadi kita pisahkan.
+flake8>=6.0.0
