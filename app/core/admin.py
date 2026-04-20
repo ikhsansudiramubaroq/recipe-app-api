@@ -12,7 +12,7 @@ class UserAdmin(BaseUserAdmin):
     ordering = ['id']
     list_display = ['email', 'name']
     fieldsets = (
-        (None, {'fields' : ('email', 'password')}),
+        (None, {'fields': ('email', 'password')}),
         (
             _('Permission'),
             {
@@ -40,5 +40,6 @@ class UserAdmin(BaseUserAdmin):
             )
         }),
     )
+
 
 admin.site.register(models.User, UserAdmin)
